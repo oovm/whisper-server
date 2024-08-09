@@ -1,5 +1,5 @@
 [package]
-name = "sub_projects"
+name = "whisper-server"
 publish = false
 version = "0.0.0"
 authors = ["Aster <192607617@qq.com>"]
@@ -14,6 +14,12 @@ edition = "2021"
 exclude = ["package.json", "tests/**"]
 
 [dependencies]
+anyhow = "1.0.86"
+hf-hub = "0.3.2"
+candle-core = "0.6.0"
+candle-nn = "0.6.0"
+candle-transformers = "0.6.0"
+symphonia = { version = "0.5.4", features = ["opt-simd", "opt-simd-avx", "opt-simd-sse", "opt-simd-neon"]}
 
 [dev-dependencies]
 
